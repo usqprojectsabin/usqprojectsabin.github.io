@@ -1,0 +1,73 @@
+/** --------------------------- Custom design code --------------------------------- **/
+
+/* design in home page for making first letter only with 4.5 em */
+#slider p::first-letter{
+  font-size: 4.5em;
+    float: left;
+    
+}
+
+/* style for paragraph element p inside slider selector */
+#slider p{
+  font-size: 1.5em;
+    
+}
+
+
+/* design small line inside any one section*/
+.line{
+      height: 2px;
+    width: 50px;
+    background-color: #888F96;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+/* remove the bullets and numbering and make the font bold*/
+.col-id-3 li{
+  list-style-type: none;
+  font-weight: bold ;
+  padding-left: 15px;
+}
+
+/* remove the bullets and numbering*/
+.col-id-7 li{
+  list-style-type: none;
+  
+}
+
+
+. slide-box > .col-id-3 {
+/* strickly use this style if other too found with this same selector*/
+  padding: 10px !important;
+}
+
+/* style  image inside of slide-box selector*/
+.slide-box > img{
+  border-radius: 50%: 
+}
+
+/* give padding to content section*/
+.col-id-3 .content{
+    /*background-color: #888F96;*/
+  padding: 35px;
+}
+
+
+/*align paragraph which is inside verticle element selector to center*/
+.vertical-line p{
+  text-align: center; 
+}
+
+/* give design to slider-background selector of all pages having this selector*/
+#slider-background{
+  min-height: 300px;
+  background-color: #899199eb;
+  padding-top: 140px;
+  padding-left: 15px;
+
+}
+

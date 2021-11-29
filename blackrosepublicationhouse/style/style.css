@@ -1,5 +1,8 @@
 /* stylesheet for all webpages */
 
+
+
+
 /* ----------------------------------   Css defining the width of the column and a 1 single row block  ---------------------------------------------------- */
 
 
@@ -46,7 +49,10 @@
     width: 100%;
   }
 
- 
+  /* hide slider section in smartphone view*/
+  #slider{
+    display: none;
+  }
 }
 
 /* ---------------------------------  Css for print the website -----------------------------------------------  */
@@ -61,10 +67,23 @@
 
 
   }
+/* Hide the menu, footer, image background of home page and slider background of other pages*/
+  nav, footer,#slider, #slider-background{
+    display: none !important;
+  }
+ 
+ /* append the size of image to 140px */
+  .content img{
 
+    height: 140px;
+
+  }
 
   
 }
+
+
+
 
 /* ----------------------------------   Css for id and class ---------------------------------------------------- */
 
@@ -82,14 +101,9 @@
 
 /* style for body of all pages */
 body{
-  color:rgb(0,50,0);
-  background-color: #fff;
-  margin: 0px auto;
-  width:90%;
+  margin:0px auto;
+ background-color: #EFEFEF;
 
-}
-header{
-  margin-top: 15px;
 }
 
 /* remove text decoration of all anchor a element*/
@@ -97,98 +111,63 @@ a{
   text-decoration-line: none;
 }
 
+/* Css for clearing float */
+.clear{
+  clear:both;
+}
+
+/* navigation menu css design */
+nav{
+   opacity: 0.8;
+  background-color: #6E7780;
+  display: flex;
+}
+
+/* design for li element of menu */
+nav ul li{
+  float:left;
+  display: inline-block;
+  font-size: 24px;
+  padding: 10px;
+  float: center;
+}
+
+/* style for anchor of  menu */
+nav ul li a{
+  
+  color:black;
+}
+
+/* style for active class  menu */
+.active{
+  color:white;
+}
+
+/* style for anchor of  menu when mouse is hovered in menu */
+nav ul li a:hover{
+  /*font-size:20px;*/
+  color:white;
+  /*background-color: green;*/
+}
 
 /* style for anchor of  menu when its already visited */
 
 
-.error-msg{
-  color:red;
+/* slider section (Here we put a one fixed background image in a slider section ) */
+#slider{
+  background: url('../images/slider-image.jpg');
+  padding-top: 25px;
+   min-height: 490px;
+   background-color: #044099;
+   color:white;
+   background-attachment: fixed;
 }
 
-.progress{
-  width: 100%;
-  background-color: #ddd;
+/* style for footer section */
+#footer{
+  min-height: 300px;
+  background-color: #888F96;
 }
-.progress-bar {
-  width: 30%;
-  height: 30px;
-  background-color: rgb(0,50,0);;
-  text-align: center;
-  line-height: 30px;
-  color: white;
-}
-
-.alert-danger{
-   padding: 20px;
-  background-color: #f44336;
-  color: white;
-}
-
-.form-control{
-    display: block;
-    width: 100%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    /*line-height: 1.428571429;*/
-    /*color: #555;*/
-    vertical-align: middle;
-    background-color: #fff;
-    /*border: 1px solid #ccc;*/
-    /*border-radius: 4px;*/
-}
-
-.form_body {
-    padding: 25px 25px 30px 25px;
-    box-shadow: 1px 2px 13px 0px #333;
-
-    -moz-border-radius: 0 0 4px 4px;
-    -webkit-border-radius: 0 0 4px 4px;
-    border-radius: 0 0 4px 4px;
-    
-    text-align: left;
-    transition: all .4s ease-in-out;
-}
-
-.form_body:hover {
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-textarea{
-  width: 100%;
-}
-
-
-.btn-prev{
-  width: 100%;
-  background-color: rgb(0,50,0);;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.btn-prev:hover {
-  background-color: #45a049;
-}
-
-
-.btn-next{
-  width: 100%;
-  background-color: rgb(0,50,0);;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.btn-next:hover {
-  background-color: #45a049;
-}
-
 
 /* creates vertical solid line */
 .vertical-line{
@@ -197,77 +176,22 @@ textarea{
   
 }
 
+/* bottom portion of footer layout */
+.footer-end{
+  background-color: #888F96;
+  text-align:center;
+  padding: 15px;
 
-/* right float*/
-.pull-right{
-    text-align:right;
 }
 
-/* toogle switch css code*/
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+/* this sticky class is added from javascript for making navigation part fixed */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+ 
 }
 
 
 
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-
-input:checked + .slider {
-    background-color: rgb(0,50,0);;
-}
-
-input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-.display-first-help-section > p {
-    padding-left: 10px;
-}

@@ -10,6 +10,7 @@
 
 	<!-- Stylesheet collection for design of webpages and link html pagess to css -->
 	<LINK href="../style/style.css" rel="stylesheet" type="text/css"/>
+	<LINK href="../style/custom.css" rel="stylesheet" type="text/css"/>
 
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,14 +23,8 @@
 
 	<!-- Title of the webpage -->
 	<title>
-		Global Adventures
+		Home - Black Rose Publishing
 	</title>
-	<!--inline css style-->
-	<style type="text/css">
-	  #user_form fieldset:not(:first-of-type) {
-		display: none;
-	  }
-	</style>
 
 </head>
 <body>
@@ -38,443 +33,221 @@
 	<!-- Header section of website which contains logo and menu-->
 	
 
+	<!-- menu html code -->
+	<!-- define 1 100% width block -->
 	
-	<header class="header">
+	<nav class="navigation" id="navigation">
 		<!-- Logo section -->
 		<div class="logo">
-			<a href="index.html"><img src="../images/logo.svg" alt="Global Adventures" height="95"> Global Adventures</a>
+			<a href="index.html"><img src="../images/black rose publication house.png" alt="Black Rose Publication house" height="95"></a>
 		</div>
-	</header>
 		
+		<!-- menu list order -->
+		<ul>
+			<li ><a href="index.html" class="active"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="about.html"><i class="fa fa-phone">About</i></a></li>
+			<li><a href="author_list.html"><i class="fa fa-info-circle">Author </i></a></li>
+			<li><a href="report.html"><i class="fa fa-file-text-o">Report</i></a></li>
+		</ul>
+		<!-- end of nav -->
+
+	</nav>
 	<main>
-		
-	
-			<article class="row container">
-
-
-
+		<!-- make a one big image container which contain fixed image background with some hardcoded text-->
+		<div class="row" >
+			<div id="slider">
 				<br>
-					<section class="progress">
-					<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-					</section>
-			
 				<br>
-				<!--<div class="alert alert-danger hide"></div>-->
 				<br>
-				<section class="form_body">
-						
-					<form id="user_form"  action="https://tau.usq.edu.au/courses/CSC2406/reflect.php"  method="post">	
-						<fieldset>
-							<legend>Step 1: Personal Details</legend>
-							<div class="col-id-12 pull-right">
+				<br>
+				<!-- simple text in a container -->
+				<p>No tears in the writer,</p> <p>No tears in the reader. </p><p>No surprise in the writer, </p><p>No surprise in the reader</p>
+			</div>
+		<!-- end of section -->
 
-								<i class="fa fa-question-circle" aria-hidden="true"></i> switch on button to show help
-								<label class="switch">
-									<input type="checkbox" class="first-help-section" name="first_help_section" >
-									<span class="slider round"></span>
-								</label>
+		</div>
+		<article>
+			<section class="row">
+				<!-- title of welcome message-->
+				<center><h1>Welcome to Black Rose Publication</h1></center>
+				
+				<!-- column with 16.66% width -->
+				<div class="col-id-2"></div>
 
-							</div>
-							<div class="col-id-12">
-								<div id="display-first-help-section" style="display: none; background-color: #ECF0F1">
+				<!-- column with 66.66% width -->
+				<div class="col-id-8">
+					<!-- content  -->
 
-									<h1><center>Please follow the rules</center></h1>
-									
-									<p>Name field: Maximum 30 characters allowed</p>
-									<p>Email field: Only correct email addresses allowed</p>
-									<p>switch off button to close help</p>
-
-								</div>
-							</div>
-
-							<div class="col-id-12">
-
-								<label for="travelling_with_partner">travelling with partner ?</label><div id="error-travelling-with-partner"></div><br>
-								<div class="col-id-6">
-									Yes
-									<input type="radio" class="form-control" value="yes" name="travelling_with_partner">
-								</div>
-								<div class="col-id-6">
-									No
-									<input type="radio" class="form-control" value="no" name="travelling_with_partner">
-								</div>
-							</div>
-								
-							
-							<div class="hide-your-information-form">
-								<div class="col-id-6">
-									<b>Please fill up your Detail</b>
-									<div class="col-id-12 ">
-										<label for="your_full_name">Name </label><div id="error-fullname"></div>
-										<input type="text" class="form-control" id="ÿour-name"  name="your_name" placeholder="please enter full name" required>
-									</div>
-
-									
-									<div class="col-id-12">
-										<label for="dob">Date Of Birth</label>	<div id="error-dob"></div>
-										<input type="date" class="form-control" id="ÿour-dob"  name="your_dob" placeholder="Date of birth" required>
-									</div>
-
-									<div class="col-id-12">
-										<label for="occupation">Occupation</label><div id="error-occupation"></div>
-										<input type="text" class="form-control" id="ÿour-occupation"  name="your_occupation" placeholder="please enter your occupation" required>
-									</div>
-
-									<div class="col-id-12">
-										<label for="gender">Gender
-										<br>
-										<div class="col-id-6">
-											Male
-											<input type="radio" class="form-control" id="ÿour-male-gender" value="male" name="gender" checked>
-										</div>
-										<div class="col-id-6">
-										Female
-										<input type="radio" class="form-control" id="ÿour-female-gender" value="female" name="gender">
-										</div>
-									</div>
-									<div class="col-id-12">
-										<label for="dietary">Dietary Requirements</label><div id="error-dietary-requirement"></div>
-										<input type="text" class="form-control" id="ÿour-dietary-requirement"  name="your_dietary_requirement" placeholder="Your dietery requirement">
-									</div>
-
-									<div class="col-id-12">
-										<label for="special_needs">Special Needs?</label><div id="error-dietary"></div>
-										<textarea rows="4" cols="50"  placeholder="please enter your special needs" id="ÿour-special-needs[]" name="your_special_needs">
-										</textarea>
-
-									</div>
-								</div>
-							</div>
-							<div class="hide-partner-form">
-								<div class="col-id-6">
-									<b>Please fill up your  partner Detail</b>
-									<div class="col-id-12 ">
-										<label for="your_partner_full_name">Name </label><div id="error-partner-fullname"></div>
-										<input type="text" class="form-control" id="ÿour-partner-name"  name="your_name" placeholder="please enter full name">
-									</div>
-
-									
-									<div class="col-id-12">
-										<label for="partner_dob">Date Of Birth</label><div id="error-partner-dob"></div>
-										<input type="date" class="form-control" id="ÿour-partner-dob"  name="your_dob" placeholder="Date of birth">
-									</div>
-
-									<div class="col-id-12">
-										<label for="partner_occupation">Occupation</label><div id="error-partner-occupation"></div>
-										<input type="text" class="form-control" id="ÿour-partner-occupation"  name="your_occupation" placeholder="please enter your occupation">
-									</div>
-
-									<div class="col-id-12">
-										<label for="your_partner_gender">Gender</label>
-										<br>
-										<div class="col-id-6">
-
-											Male
-
-
-
-											<input type="radio" class="form-control" id="ÿour-partner-male-gender" value="male" name="partner-gender">
-										</div>
-										<div class="col-id-6">
-											Female
-											<input type="radio" class="form-control" id="ÿour-partner-female-gender" value="female" name="partner-gender" checked>
-										</div>
-									</div>
-
-									<div class="col-id-12">
-										<label for="partner_dietary">Dietary Requirements</label><div id="error-partner-dietary-requirement"></div>
-										<input type="text" class="form-control" id="ÿour-partner-dietary-requirement"  name="your_dietary_requirement" placeholder="Your dietery requirement">
-									</div>
-
-									<div class="col-id-12">
-										<label for="your_partner_special_needs">Special Needs?</label>
-										<textarea rows="4" cols="50"  placeholder="please enter your special needs" id="ÿour-special-needs" name="your_special_needs">
-										</textarea>
-
-									</div>
-
-
-
-								</div>
-
-							</div>
-
-
-							
-
-							<div class="col-id-12 travelling-with-childrens">
-
-								
-								<label for="full_name">travelling with children ?<div id="error-travelling-with-childrens"></div></label> 
-
-								<input type="text" id="travelling-with-childrens" name="children_number" placeholder="Number of children" value="0"><br />
-								<br>
-								<div class="show-form-for-children"></div>
-							</div>
-
-
-							<div class="col-id-12 travelling-with-friends">
-
-
-								<label for="full_name">travelling with Friends ?</label><div id="error-travelling-with-friends"></div><br>
-
-								<input type="text" id="travelling-with-friends" name="friend_number" placeholder="Number of Friends" value="0"><br />
-								<br>
-								<div class="show-form-for-friend"></div>
-							</div>
-
-							
-
-							
-							<input type="button" class="next btn btn-next" value="Next" />
-						
-						</fieldset>	
-						<fieldset>
-							<legend> Step 2: Preferences</legend>
-							<div class="col-id-12 pull-right">
-
-								<i class="fa fa-question-circle" aria-hidden="true"></i> switch on button to show help
-								<label class="switch">
-									<input type="checkbox" class="second-help-section" name="second_help_section" >
-									<span class="slider round"></span>
-								</label>
-
-							</div>
-							<div class="col-id-12">
-								<div id="display-second-help-section" style="display: none; background-color: #ECF0F1">
-
-									<h1><center>Coming soon ...</center></h1>
-<!-- 
-									<p>Name field: Maximum 20 characters allowed</p>
-									<p>Email field: Only correct email addresses allowed - Maximum 40 characters</p>
-									<p>Occupation: Maximum 30 characters allowed</p> -->
-
-								</div>
-							</div>
-
-							<div class="col-id-12">
-								<label for="your_preferred travelled date">Prefered travelled date<div id="error-traveldate"></div>
-									<input type="date" class="form-control" id="preffered-travel-date"  name="preffered_travel_date" placeholder="please enter date">
-							</div>
-							<div class="col-id-12 ">
-								<label for="budget"> Budget</label><br>
-
-								 <select id="budget" name="budget" class="form-control">
-                   <option value="">Choose your range of budget(AUD)</option>								
-                   <option value="1-1000" selected="">Less than 1000</option>
-                   <option value="1000-5000">1000-5000</option>
-                   <option value="5000-10000">5000-10000</option>
-                   <option value="10000-50000">10000-50000</option>
-                   <option value="50000-100000">50000-100000</option>
-                 </select>
-							</div>
-							<div class="col-id-12">
-								<label for="gender">How active ?</label>
-								<br>
-								<input type="radio" value="Want to be travelling all the time" name="How Active" checked >&nbsp;Want to be travelling all the time<br>
-                <input type="radio" value="Need Rest days" name="How Active">&nbsp;Need rest days?<br>
-                <input type="radio" value="All Time" name="How Active" >&nbsp;All Time<br>
-                <input type="radio" value="Enjoy strenuous activities" name="How Active" >&nbsp;Enjoy strenuous activities<br>
-                <input type="radio" value="Sedentary" name="How Active" >&nbsp;Sedentary<br>
-
-
-							</div>
-              <div class="col-id-12">
-								<label for="gender">Interest</label> <br>
-
-                <input type="checkbox" name="Interest" value="Art" checked>&nbsp;Art&nbsp;&nbsp;
-                <input type="checkbox" name="Interest" value="History">&nbsp;History&nbsp;&nbsp;
-                <input type="checkbox" name="Interest" value="Socilogy">&nbsp;Socilogy&nbsp;&nbsp;
-                <input type="checkbox" name="Interest" value="Architecture">&nbsp;Architecture&nbsp;&nbsp;<br/>
-                <input type="checkbox" name="Interest" value="Wildlife">&nbsp;Wildlife&nbsp;&nbsp;
-                <input type="checkbox" name="Interest" value="Natural History">&nbsp;Natural History&nbsp;&nbsp;
-                <input type="checkbox" name="Interest" value="Photography">&nbsp;Photography&nbsp;&nbsp;
-              </div>
-						
-
-									<input type="button" name="previous" class="previous btn btn-prev col-id-5" value="Previous" />
-							
-
-									<input type="button" name="next" class="next page-two btn btn-next col-id-5" value="Next" />
-							
-						</fieldset>
-						
-						<fieldset>
-						<legend>Step 3: Location</legend>
-							<div class="col-id-12 pull-right">
-
-								<i class="fa fa-question-circle" aria-hidden="true"></i> switch on button to show help
-								<label class="switch">
-									<input type="checkbox" class="third-help-section" name="third_help_section" >
-									<span class="slider round"></span>
-								</label>
-
-							</div>
-							<div class="col-id-12">
-								<div id="display-third-help-section" style="display: none; background-color: #ECF0F1">
-
-									<h1><center>Coming soon ..</center></h1>
-
-									<!-- <p>Name field: Maximum 20 characters allowed</p>
-									<p>Email field: Only correct email addresses allowed - Maximum 40 characters</p>
-									<p>Occupation: Maximum 30 characters allowed</p> -->
-
-								</div>
-							</div>
-						<div class="col-id-12">
-							<label for="mobile">Accomodation*</label><br>
-							<input type="radio" name="accomodation" value="Hotel" checked>&nbsp;&nbsp;&nbsp;Hotel&nbsp;&nbsp;<br/>
-	            <input type="radio" name="accomodation" value="Motel">&nbsp;&nbsp;&nbsp;Motel&nbsp;&nbsp;<br/>
-	            <input type="radio" name="accomodation" value="Bed & Breakfast">&nbsp;&nbsp;&nbsp;Bed & Breakfast&nbsp;&nbsp;<br/>
-	            <input type="radio" name="accomodation" value="Air">&nbsp;&nbsp;&nbsp;Air&nbsp;&nbsp;<br/>
-	            <input type="radio" name="accomodation" value="Student accomodation">&nbsp;&nbsp;&nbsp;Student accomodation&nbsp;&nbsp;<br/>
-	            <input type="radio" name="accomodation" value="Backpackers accomodation">&nbsp;&nbsp;&nbsp;Backpackers accomodation&nbsp;&nbsp;<br/>
-	            <input type="radio" name="accomodation" value="Camping">&nbsp;&nbsp;&nbsp;Camping&nbsp;&nbsp;<br/>
-	            <input type="radio" name="accomodation" value="Other">&nbsp;&nbsp;&nbsp;Other&nbsp;&nbsp;<br/>
-						</div>
-						<div class="col-id-12">
-							<label for="address">Modes of travels</label><br>
-							<input list="modes_of_travel" name="Modes Of Travel" value="Air">
-							<datalist id="modes_of_travel">
-							<option value="Air" >
-							<option value="Water">
-							<option value="Train">
-							<option value="Bus">
-							<option value="Car">
-							<option value="Bicycle">
-							<option value="Horse">
-							<option value="Donkey/Mule">
-							<option value="Camel">
-							<option value="Llama">
-							<option value="Waliking">
-							<option value="Other">
-							</datalist>
-						</div>
-						<div class="col-id-12">
-							<label for="address">Travel environment</label>
-							<br>
-
-							<input type="radio" name="Travel Environment" value="Cities" checked>&nbsp;&nbsp;&nbsp;Cities&nbsp;&nbsp;<br/>
-              <input type="radio" name="Travel Environment" value="Country">&nbsp;&nbsp;&nbsp;Country&nbsp;&nbsp;<br/>
-              <input type="radio" name="Travel Environment" value="Natural">&nbsp;&nbsp;&nbsp;Natural&nbsp;&nbsp;<br/>
-              <input type="radio" name="Travel Environment" value="Mountains">&nbsp;&nbsp;&nbsp;Mountains&nbsp;&nbsp;<br/>
-              <input type="radio" name="Travel Environment" value="Desert">&nbsp;&nbsp;&nbsp;Desert&nbsp;&nbsp;<br/>
-              <input type="radio" name="Travel Environment" value="Rainforest">&nbsp;&nbsp;&nbsp;Rainforest&nbsp;&nbsp;<br/>
-              <input type="radio" name="Travel Environment" value="Sea">&nbsp;&nbsp;&nbsp;Sea&nbsp;&nbsp;<br/>
-              <input type="radio" name="Travel Environment" value="Coastal">&nbsp;&nbsp;&nbsp;Coastal&nbsp;&nbsp;<br/>
-              <input type="radio" name="Travel Environment" value="Inland">&nbsp;&nbsp;&nbsp;Inland&nbsp;&nbsp;<br/>
-						</div>
-
-						<div class="col-id-12">
-							<label for="address">Destination</label><div id="error-countryselector"></div>
-						 <select id="countryselector" class="form-control">
-	             <option value="">Select your destination</option>
-	             <option value="africa">Africa</option>
-	             <option value="asia">Asia</option>
-	             <option value="central-america">Central America</option>
-	             <option value="europe">Europe</option>
-	             <option value="european-union">European Union</option>
-	             <option value="middle-east">Middle East</option>
-	             <option value="north-america">North America</option>
-	             <option value="oceania">Oceania</option>
-	             <option value="south-america">South America</option>
-	             <option value="caribbean">The Caribbean</option>
-	           </select>
-	        	</div>
-	         	<div class="output col-id-8">
-              <div id="africa" class="city">
-                <input type="radio" value="Eastern" name="Destination Africa"  >&nbsp;Eastern
-                <input type="radio" value="Middle" name="Destination Africa">&nbsp;Middle
-                <input type="radio" value="Northern" name="Destination Africa">&nbsp;Northern
-                <input type="radio" value="Western" name="Destination Africa">&nbsp;Western
-                <input type="radio" value="Southern" name="Destination Africa">&nbsp;Southern
-              </div>
-              <div id="asia" class="city">
-                <input type="radio" value="Nepal" name="Destination Asia"  >&nbsp;Nepal
-                <input type="radio" value="India" name="Destination Asia">&nbsp;India
-                <input type="radio" value="Malaysia" name="Destination Asia">&nbsp;Malaysia
-                <input type="radio" value="South Korea" name="Destination Asia">&nbsp;South Korea
-                <input type="radio" value="Japan" name="Destination Asia">&nbsp;Japan
-              </div>
-              <div id="central-america" class="city">
-                <input type="radio" value="Mexico" name="Destination Central-america"  >&nbsp;Mexico
-                <input type="radio" value="Honduras" name="Destination Central-america">&nbsp;Honduras
-                <input type="radio" value="Panama" name="Destination Central-america">&nbsp;Panama
-              </div>
-              <div id="europe" class="city">
-                <input type="radio" value="Russia" name="Destination Europe"  >&nbsp;Russia
-                <input type="radio" value="Iceland" name="Destination Europe">&nbsp;Iceland
-                <input type="radio" value="United Kingdom" name="Destination Europe">&nbsp;United Kingdom
-                <input type="radio" value="Switzerland" name="Destination Europe">&nbsp;Switzerland
-                <input type="radio" value="Belarus" name="Destination Europe">&nbsp;Belarus
-              </div>
-              <div id="european-union" class="city">
-                <input type="radio" value="Belgium" name="Destination European-union" >&nbsp;Belgium
-                <input type="radio" value="France" name="Destination European-union">&nbsp;France
-                <input type="radio" value="Spain" name="Destination European-union">&nbsp;Spain
-                <input type="radio" value="Sweden" name="Destination European-union">&nbsp;Sweden
-                <input type="radio" value="Ireland" name="Destination European-union">&nbsp;Ireland
-              </div>
-              <div id="middle-east" class="city">
-                <input type="radio" value="Bahrain" name="Destination Middle-east" >&nbsp;Bahrain
-                <input type="radio" value="Iraq" name="Destination Middle-east">&nbsp;Iraq
-                <input type="radio" value="Syria" name="Destination Middle-east">&nbsp;Syria
-                <input type="radio" value="Yemen" name="Destination Middle-east">&nbsp;Yemen
-              </div>
-              <div id="north-america" class="city">
-                <input type="radio" value="U.S.A" name="Destination North-america" >&nbsp;U.S.A
-                <input type="radio" value="Canada" name="Destination North-america">&nbsp;Canada
-                <input type="radio" value="Greenland" name="Destination North-america">&nbsp;Greenland
-              </div>
-              <div id="oceania" class="city">
-                <input type="radio" value="Papua New Guinea" name="Destination Oceania" >&nbsp;Papua New Guinea
-                <input type="radio" value="Samoa" name="Destination Oceania">&nbsp;Samoa
-                <input type="radio" value="New Zealand" name="Destination Oceania">&nbsp;New Zealand
-                <input type="radio" value="Micronesia" name="Destination Oceania">&nbsp;Micronesia
-              </div>
-              <div id="south-america" class="city">
-                <input type="radio" value="Bolivia" name="Destination South-america"  >&nbsp;Bolivia
-                <input type="radio" value="Peru" name="Destination South-america">&nbsp;Peru
-                <input type="radio" value="Colombia" name="Destination South-america">&nbsp;Colombia
-                <input type="radio" value="Venezuela" name="Destination South-america">&nbsp;Venezuela
-              </div>
-              <div id="caribbean" class="city">
-                <input type="radio" value="Cuba" name="Destination Caribbean"  >&nbsp;Cuba
-                <input type="radio" value="Barbados" name="Destination Caribbean">&nbsp;Barbados
-                <input type="radio" value="Jamaica" name="Destination Caribbean">&nbsp;Jamaica
-                <input type="radio" value="Curacao" name="Destination Caribbean">&nbsp;Curacao
-                
-              </div>
-	          </div>
-	        </div>
-	        <br>
-						<input type="button" name="previous" class="previous btn btn-prev" value="Previous" />
-						<input type="submit" name="submit" class="submit btn btn-next" value="Submit" />
-						</fieldset>
-					</form>		
-				</section>
+					Black Rose Publishing is a new independent publishing house established in 2010 AD, that was created to publish modern "noir crime fiction".  It is located inside of University Of Southern Queensland Toowoomba.
+				</div>
+				<!-- column with 16.66% width -->
+				<div class="col-id-2"></div>
 			
+			<!-- end of section -->
+			</section>
+			<hr>
+
+			<section class="row">
+				<!-- title of block with center -->
+				<center><h1>Best Selling</h1></center>
+				<div class="line"></div>
+			<!-- end of section -->
+				
+			</section>
+
+			<section class="row slide-box">
+				<!-- creates a 25% width column -->
+				<div class="col-id-3">
+					<div class="content">
+						<!-- Best selling books list with image and clicked this link will navigate to amazon website which contains detail information of author  -->
+					 		<!-- image of book -->
+				 		<img src="../images/author/rachel_abbott/nowhere child.jpg" alt="Nowhere Child: A Short Novel (Kindle Single)" style="width:100%">
+				      		<!--float and align center -->
+				      			Nowhere Child: A Short Novel (Kindle Single)				      
+				     </div>
+					
+				</div>
 			
-			
+				<div class="col-id-3">
+					<div class="content">
+
+				 		<img src="../images/author/rachel_abbott/only the innocent.jpg" alt="only the innocent" style="width:100%">
+				      		Only the innocent
+				  		
+					</div>
+				</div>
+				
+				<div class="col-id-3">
+					<div class="content">
+
+						<img src="../images/author/rachel_abbott/The Sixth Window.jpg" alt="The Sixth Window: The unbearably tense psychological thriller (Tom Douglas Thrillers Book 6) " style="width:100%">
+				      		The Sixth Window 
+						
+					</div>
+				</div>
+				<div class="col-id-3">
+					<div class="content">
+
+						<img src="../images/author/rachel_abbott/Come a Little Closer.jpg" alt="Come a Little Closer" style="width:100%">
+				      		Come a Little Closer
+						
+					</div>
+				</div>
+			<!-- end of section -->
 
 			</section>
 		
 
 			
+			
+			<br>
+			<br>
+			<!--  break line-->
+			<br>
+
+			<section class="row">
+				<center><h1>Best Author</h1>
+
+					
+				</center>
+
+				<div class="line"></div>
+			<!-- end of section -->
+
+			</section>
+			<section class="row slide-box">
+				<div class="col-id-3">
+					<div class="content">
+						<!-- Best Author list signed with us. Image clicked with this link will navigate to amazon website which contains detail information of author  -->
+						<a href="singlePage/rachel_abbott.html">
+					 		<!-- image of book -->
+						 	<img src="../images/author/Rachel_Abbott_2013.jpg" alt="Rachel Abbott" height="300" style="width:100%" >
+						</a>
+					      Rachel Abbott
+					      <p>British author of psychological thrillers</p>
+						
+					</div>
+				</div>
+
+
 
 			
-			
+				<div class="col-id-3">
+					<div class="content">
+
+						<img src="../images/author/Davidwhitelaw.jpg" alt="David whitelaw" height="300" style="width:100%">
+				      David Whitelaw
+				      <p>Author of Romantic thrillers</p>
+					
+					</div>
+				</div>
+				
+				<div class="col-id-3">
+					<div class="content">
+
+						<img src="../images/author/PeterLovesey.jpg" alt="Peter Lovesey" height="300" style="width:100%">
+				      Peter Lovesey
+				      <p>Peter (Harmer) Lovesey (born 1936), also known by his pen name Peter Lear, is a British writer of historical and contemporary detective novels and short stories.</p>
+						
+					</div>
+				</div>
+				<div class="col-id-3">
+					<div class="content">
+
+						<img src="../images/author/Cyril-Alington-1908.jpg" alt="Mountains" height="300" 	style="width:100%">
+				      Cyril Alington
+				      <p>Cyril Argentine Alington (22 October 1872 – 16 May 1955) was an English educationalist, scholar, cleric, and prolific author.</p>
+						
+					</div>
+				</div>
+			<!-- end of section -->
+
+			</section>
 			<!-- end of article -->
 
 		</article>
 	<!-- end of main -->
 	</main>
-		
+		<footer>
+			<section id="footer">
+				<div class="col-id-4 vertical-line">
+					<h2><center>About Us</center></h2>
+
+					<p>Black Rose Publishing is a new independent publishing house established in 2010 AD, that was created to publish modern "noir crime fiction".  It is located inside of University Of Southern Queensland Toowoomba.</p>
+				</div>
+				<div class="col-id-4 vertical-line">
+					<h2><center>Links</center></h2>
+					<p>
+						<a href="index.html"><i class="fa fa-home"></i>Home</a><br>
+						<a href="about.html"><i class="fa fa-phone"> </i> About US</a><br>
+						<a href="author_list.html"><i class="fa fa-info-circle"> </i>Author List</a><br>
+						<a href="report.html"><i class="fa fa-file-text-o"></i>Report</a>
+					</p>
+				</div>
+				<div class="col-id-4">
+					<h2><center>Contact Us</center></h2>
+					<p><center> phone: +61 4511111111</center></p>
+					<p><center> Location: USQ</center></p>
+
+				</div>
+			<!-- end of section -->
+
+			</section>
+			<hr>
+
+			<section class="row footer-end">
+					@ Black Rose Publication house | Designed by - Sabin Maharjan
+			<!-- end of section -->
+
+			</section>
+			<!-- end of footer  section-->
+				
+		</footer>
 		
 
 
-	<script src="../script/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="../script/form.js"></script>
+
+	<script type="text/javascript" src="../script/main.js"></script>
 	
 </body>
 </html>
